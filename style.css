@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #f5f5f0;
+  color: #2c2c2c;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.quote-container {
+  margin-bottom: 2rem;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.quote-container.fade-out {
+  opacity: 0;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #3a3a3a;
+}
+
+.author {
+  display: block;
+  font-size: 1.1rem;
+  font-style: normal;
+  color: #666;
+}
+
+.pagination {
+  margin-bottom: 2rem;
+}
+
+.page-indicator {
+  font-size: 0.9rem;
+  color: #999;
+  font-family: "Georgia", serif;
+}
+
+.next-btn {
+  background-color: transparent;
+  border: 2px solid #2c2c2c;
+  color: #2c2c2c;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-family: "Georgia", serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.next-btn:hover {
+  background-color: #2c2c2c;
+  color: #f5f5f0;
+}
+
+.next-btn:active {
+  transform: translateY(1px);
+}
+
+footer {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+footer a:hover {
+  color: #2c2c2c;
+}
+
+footer a svg {
+  vertical-align: middle;
+}
+
+footer .separator {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .quote {
+    font-size: 1.2rem;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+}

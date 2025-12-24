@@ -1,0 +1,24 @@
+{
+  "name": "solidquote.nl",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/soliddevnl/solidquote.nl#readme",
+  "bugs": {
+    "url": "https://github.com/soliddevnl/solidquote.nl/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soliddevnl/solidquote.nl.git"
+  },
+  "license": "ISC",
+  "author": "Joost van Driel",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.16"
+  }
+}
